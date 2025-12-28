@@ -23,6 +23,8 @@ app.use('/api/auth', authRoutes);
 app.use('/api/daycares', daycareRoutes);
 app.use('/api/bookings', bookingRoutes);
 app.use('/api/pets', petRoutes); // optional
+app.use('/api/users', require('./src/routes/userDashboardRoutes'));
+
 
 // ------------------- ROOT ROUTE -------------------
 app.get('/', (req, res) => {
